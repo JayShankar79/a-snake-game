@@ -1,5 +1,5 @@
 :root {
-  --bg: #091540;
+  --bg: #1f2937;
   --card: #14213d;
   --text: #f1f5f9;
   --accent-1: #ff006e;
@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top, #1a2d6b, var(--bg));
+  background: radial-gradient(circle at top, #134e4a, #0b1020 65%, var(--bg));
   min-height: 100vh;
 }
 
@@ -108,9 +108,10 @@ select,
 .board {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  border: 2px solid #ffffff55;
+  border: 2px solid #99f6e455;
   border-radius: 12px;
   overflow: hidden;
+  background: linear-gradient(180deg, #0f766e44, #1e3a8a33);
 }
 
 .cell {
@@ -123,10 +124,10 @@ select,
   justify-content: space-between;
 }
 
-.cell:nth-child(4n + 1) { background: #ef476f33; }
-.cell:nth-child(4n + 2) { background: #ffd16633; }
-.cell:nth-child(4n + 3) { background: #06d6a033; }
-.cell:nth-child(4n + 4) { background: #118ab233; }
+.cell:nth-child(4n + 1) { background: #22d3ee33; }
+.cell:nth-child(4n + 2) { background: #a78bfa33; }
+.cell:nth-child(4n + 3) { background: #34d39933; }
+.cell:nth-child(4n + 4) { background: #f59e0b33; }
 
 .cell-number {
   font-size: 0.72rem;
