@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake & Ladder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>🐍 Snake &amp; Ladder 🎲</h1>
+      <p>Reach square 100 first to win!</p>
+    </header>
+
+    <section class="controls card">
+      <div class="player-setup">
+        <label for="playerCount">Players</label>
+        <select id="playerCount">
+          <option value="2">2 Players</option>
+          <option value="3">3 Players</option>
+          <option value="4">4 Players</option>
+        </select>
+      </div>
+      <button id="newGameBtn" class="btn secondary">New Game</button>
+      <button id="rollBtn" class="btn primary">Roll Dice</button>
+      <div class="dice-wrap">
+        <span>Dice</span>
+        <div id="dice" class="dice">-</div>
+      </div>
+    </section>
+
+    <section class="board-area card">
+      <div id="board" class="board" aria-label="Snake and ladder board"></div>
+    </section>
+
+    <section class="status card">
+      <h2>Game Status</h2>
+      <p id="turnInfo"></p>
+      <p id="eventInfo"></p>
+      <ul id="scoreboard"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
